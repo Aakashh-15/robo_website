@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Robotics Club | IIT Guwahati</title>
+    <!-- Tailwind CDN for immediate preview fix -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://db.onlinewebfonts.com/c/5ac3fe7c6abd2f62067f266d89671492?family=HelveticaNowDisplay-Medium" rel="stylesheet" type="text/css"/>
+    <link href="https://db.onlinewebfonts.com/c/1aa3377e489837a26d019bba501e779d?family=HelveticaNowDisplayW01-Rg" rel="stylesheet" type="text/css"/>
+    <style>
+      :root {
+        --font-heading: 'HelveticaNowDisplay-Medium', Arial, sans-serif;
+        --font-body: 'HelveticaNowDisplayW01-Rg', Arial, sans-serif;
+      }
+      body { font-family: var(--font-body); background: black; margin: 0; }
+      .font-heading { font-family: var(--font-heading); }
+      @keyframes ticker {
+        0% { transform: translateX(100%); }
+        100% { transform: translateX(-100%); }
+      }
+      .animate-ticker { animation: ticker 30s linear infinite; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
